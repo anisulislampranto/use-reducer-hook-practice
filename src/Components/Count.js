@@ -4,7 +4,6 @@ const countState = {
     click:0,
     count:0,
     active:true
-
 }
 
 const countReducer = (state, action) =>{
@@ -15,11 +14,13 @@ const countReducer = (state, action) =>{
                 count: state.count + 1
             }
             break;
+            
         case 'DECREMENT':
              return{
                 ...state, 
                 count: state.count - 1
              }
+             break;
 
         default:
             return state;
